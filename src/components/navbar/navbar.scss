@@ -1,0 +1,6 @@
+@use '../../sass/global.scss' as *;
+
+.nav{
+  background-color: red;
+  width: map_get($container-width, md);    
+}

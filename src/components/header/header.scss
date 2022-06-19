@@ -1,0 +1,6 @@
+@use '../../sass/global.scss' as *;
+
+.header {
+  background: blue;
+  width: map_get($container-width, lg);
+}
