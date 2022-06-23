@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/control-has-associated-label */
-import React from 'react';
+
+import React, { useState } from 'react';
 import {
   AiOutlineHome,
   AiOutlineUser,
@@ -10,14 +11,17 @@ import {
 } from 'react-icons/ai';
 import './navbar.scss';
 
-const Navbar = () => (
-  <nav>
-    <a href="#" className="active"><AiOutlineHome /></a>
-    <a href="#about"><AiOutlineUser /></a>
-    <a href="#experience"><AiOutlineBook /></a>
-    <a href="#portfolio"><AiOutlineFundProjectionScreen /></a>
-    <a href="#contact"><AiOutlineContacts /></a>
-  </nav>
-);
+const Navbar = () => {
+  const [nav, setNav] = useState('#');
+  return (
+    <nav>
+      <a href="#" onClick={() => setNav('#')} className={nav === '#' ? 'active' : ''}><AiOutlineHome /></a>
+      <a href="#about" onClick={() => setNav('#about')} className={nav === '#about' ? 'active' : ''}><AiOutlineUser /></a>
+      <a href="#experience" onClick={() => setNav('#experience')} className={nav === '#experience' ? 'active' : ''}><AiOutlineBook /></a>
+      <a href="#portfolio" onClick={() => setNav('#portfolio')} className={nav === '#portfolio' ? 'active' : ''}><AiOutlineFundProjectionScreen /></a>
+      <a href="#contact" onClick={() => setNav('#contact')} className={nav === '#contact' ? 'active' : ''}><AiOutlineContacts /></a>
+    </nav>
+  );
+};
 
 export default Navbar;
