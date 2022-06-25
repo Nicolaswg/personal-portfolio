@@ -8,7 +8,6 @@
 
 .about-me {
   width: 100%;
-  aspect-ratio: 1/1;
   border-radius: 2rem;
   background: linear-gradient(45deg, transparent, $color-primary, transparent);
   display: grid;
@@ -30,6 +29,10 @@
     margin: 2rem 0 2.6rem;
     color: $color-light;
 
+  }
+
+  a {
+    margin-top: 2rem;
   }
 }
 
@@ -88,20 +91,31 @@
 }
 
 @media screen and (max-width: 600px){
+  section {
+    margin-bottom: 2rem;
+  }
   .about-me {
     width: 65%;
     margin: 0 auto 3rem;
   }
 
   .about-cards {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .about-card {
+    padding: 1rem;
   }
 
   .about-content {
     text-align: center;
     p {
       margin: 1.5rem 0;
+    }
+
+    a {
+      margin-top: 3.5rem;
     }
   }
 }
