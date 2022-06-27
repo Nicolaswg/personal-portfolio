@@ -31,7 +31,11 @@ body {
   margin: 0 auto;
 }
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: 500;
 }
 
@@ -42,6 +46,7 @@ h1 {
 section {
   margin-top: 10rem;
   height: 100vh;
+
   h2 {
     text-align: center;
     color: $color-primary;
@@ -95,8 +100,8 @@ img {
   object-fit: cover;
 }
 
-@media screen and (max-width: 1024px){
-  .container{
+@media screen and (max-width: 1024px) {
+  .container {
     width: map_get($container-width, md);
   }
 
@@ -105,8 +110,8 @@ img {
   }
 }
 
-@media screen and (max-width: 600px){
-  .container{
+@media screen and (max-width: 600px) {
+  .container {
     width: map_get($container-width, ms);
   }
 

@@ -19,6 +19,7 @@
   overflow: hidden;
   transform: rotate(10deg);
   transition: $transition;
+
   &:hover {
     transform: rotate(0);
   }
@@ -28,7 +29,6 @@
   p {
     margin: 2rem 0 2.6rem;
     color: $color-light;
-
   }
 
   a {
@@ -71,8 +71,7 @@
   margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 1024px){
-
+@media screen and (max-width: 1024px) {
   .about-container {
     grid-template-columns: 1fr;
     gap: 0;
@@ -90,10 +89,11 @@
   }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   section {
     margin-bottom: 2rem;
   }
+
   .about-me {
     width: 65%;
     margin: 0 auto 3rem;
@@ -110,6 +110,7 @@
 
   .about-content {
     text-align: center;
+
     p {
       display: none;
     }

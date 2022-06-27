@@ -1,36 +1,35 @@
 @use '../../sass/global.scss' as *;
 
 nav {
-	background: rgba(0, 0, 0, 0.3);
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	backdrop-filter: blur(11px);
-	width: max-content;
-	display: flex;
-	padding: 0.7rem 1.7rem;
-	z-index: 2;
-	position: fixed;
-	left: 50%;
-	transform: translateX(-50%);
-	bottom: 2rem;
-	gap: 0.8rem;
-	border-radius: 3rem;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11px);
+  width: max-content;
+  display: flex;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  gap: 0.8rem;
+  border-radius: 3rem;
 
-	a {
-		background: transparent;
-		padding: 0.8rem;
-		border-radius: 50%;
-		display: flex;
-		color: $color-light;
-		font-size: 1.1rem;
+  a {
+    background: transparent;
+    padding: 0.8rem;
+    border-radius: 50%;
+    display: flex;
+    color: $color-light;
+    font-size: 1.1rem;
 
-		&:hover {
-			background: rgba(0, 0, 0, 0.4);
-		}
-	}
+    &:hover {
+      background: rgba(0, 0, 0, 0.4);
+    }
+  }
 
-	.active {
-		background: $bg-color;
-		color: $color-white;
-	}
-	
+  .active {
+    background: $bg-color;
+    color: $color-white;
+  }
 }
