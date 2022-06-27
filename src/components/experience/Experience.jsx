@@ -11,42 +11,42 @@ const Experience = () => (
         <h3>Frontend Development</h3>
         <div className="experience-content">
           <article className="experience-details">
-            <BsPatchCheckFill />
+            <BsPatchCheckFill className="experience-icon" />
             <div>
               <h4>HTML</h4>
               <small className="text-light">2+ Years</small>
             </div>
           </article>
           <article className="experience-details">
-            <BsPatchCheckFill />
+            <BsPatchCheckFill className="experience-icon" />
             <div>
               <h4>CSS</h4>
               <small className="text-light">2+ Years</small>
             </div>
           </article>
           <article className="experience-details">
-            <BsPatchCheckFill />
+            <BsPatchCheckFill className="experience-icon" />
             <div>
               <h4>SASS</h4>
               <small className="text-light">1+ Years</small>
             </div>
           </article>
           <article className="experience-details">
-            <BsPatchCheckFill />
+            <BsPatchCheckFill className="experience-icon" />
             <div>
               <h4>JavaScript</h4>
               <small className="text-light">2+ Years</small>
             </div>
           </article>
           <article className="experience-details">
-            <BsPatchCheckFill />
+            <BsPatchCheckFill className="experience-icon" />
             <div>
               <h4>React</h4>
               <small className="text-light">1+ Years</small>
             </div>
           </article>
           <article className="experience-details">
-            <BsPatchCheckFill />
+            <BsPatchCheckFill className="experience-icon" />
             <div>
               <h4>Boostrap</h4>
               <small className="text-light">1+ Years</small>
@@ -58,28 +58,28 @@ const Experience = () => (
         <h3>Backend Development</h3>
         <div className="experience-content">
           <article className="experience-details">
-            <BsPatchCheckFill />
+            <BsPatchCheckFill className="experience-icon" />
             <div>
               <h4>Ruby</h4>
               <small className="text-light">1+ Years</small>
             </div>
           </article>
           <article className="experience-details">
-            <BsPatchCheckFill />
+            <BsPatchCheckFill className="experience-icon" />
             <div>
               <h4>Ruby on Rails</h4>
               <small className="text-light">1+ Years</small>
             </div>
           </article>
           <article className="experience-details">
-            <BsPatchCheckFill />
+            <BsPatchCheckFill className="experience-icon" />
             <div>
               <h4>Postgresql</h4>
               <small className="text-light">1+ Years</small>
             </div>
           </article>
           <article className="experience-details">
-            <BsPatchCheckFill />
+            <BsPatchCheckFill className="experience-icon" />
             <h4>Rspec</h4>
             <small className="text-light">1+ Years</small>
           </article>
