@@ -1,6 +1,6 @@
 @use '../../sass/global.scss' as *;
 
-.container.contact-container{
+.container.contact-container {
   width: 58%;
   display: grid;
   grid-template-columns: 30% 58%;
@@ -58,7 +58,7 @@ form {
 
 .btn.btn-primary {
   font-size: 1.2rem;
-} 
+}
 
 @media screen and (max-width: 1024px) {
   .container.contact-container {

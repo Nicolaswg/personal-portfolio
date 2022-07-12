@@ -2,7 +2,7 @@
 
 .portfolio-container {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
 }
 
@@ -17,7 +17,7 @@
     margin: 1.2rem 0 2rem;
   }
 
-  &:hover{
+  &:hover {
     border-color: $color-primary-variant;
     background: transparent;
   }
@@ -39,9 +39,8 @@
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
   }
-
 }
-  
+
 @media screen and (max-width: 600px) {
   .portfolio-container {
     grid-template-columns: 1fr;
