@@ -7,6 +7,9 @@ import { BsWhatsapp } from 'react-icons/bs';
 // emailjs import
 import emailjs from 'emailjs-com';
 
+// import tostify notification
+import toastify from '../tostify/notification';
+
 const Contact = () => {
   const form = useRef();
 
@@ -15,9 +18,9 @@ const Contact = () => {
 
     emailjs.sendForm('service_l7n9dy7', 'template_si53zjn', form.current, 'WKP49x0YLkHw8mjLj')
       .then((result) => {
-        console.log(result.text);
+        toastify(`Message status: ${result.text}`, 'success');
       }, (error) => {
-        console.log(error.text);
+        toastify(`Message status: ${error.text}`, 'error');
       });
 
     e.target.reset();
