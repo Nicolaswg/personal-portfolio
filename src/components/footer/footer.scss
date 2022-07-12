@@ -5,8 +5,8 @@ footer {
   padding: 3rem 0;
   text-align: center;
   font-size: 0.9rem;
-   margin-top: 7rem;
-  
+  margin-top: 7rem;
+
   a {
     color: $bg-color;
   }
@@ -45,7 +45,7 @@ footer {
     &:hover {
       background: $color-white;
       color: $bg-color;
-      border-color: $bg-color; 
+      border-color: $bg-color;
     }
   }
 }
@@ -53,9 +53,6 @@ footer {
 .footer-copyright {
   margin-bottom: 4rem;
   color: $bg-color;
-}
-
-@media screen and (max-width: 1024px) {
 }
 
 @media screen and (max-width: 600px) {
@@ -67,5 +64,4 @@ footer {
   .footer-socials {
     margin-bottom: 2.6rem;
   }
-
 }
