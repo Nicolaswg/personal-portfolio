@@ -1,5 +1,6 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './contact.scss';
+import Aos from 'aos';
 import { MdOutlineEmail } from 'react-icons/md';
 import { FiTwitter } from 'react-icons/fi';
 import { BsWhatsapp } from 'react-icons/bs';
@@ -26,8 +27,15 @@ const Contact = () => {
     e.target.reset();
   };
 
+  useEffect(() => {
+    Aos.init({
+      offset: 400,
+      duration: 1000,
+    });
+  }, []);
+
   return (
-    <section id="contact">
+    <section id="contact" data-aos="slide-up">
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
 

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
 import './portfolio.scss';
 import IMG1 from '../../assets/portfolio1.jpg';
 import IMG2 from '../../assets/portfolio2.jpg';
@@ -52,29 +53,37 @@ const cards = [
   },
 ];
 
-const Portfolio = () => (
-  <section id="portfolio">
-    <h5>My Personal Repos</h5>
-    <h2>Portfolio</h2>
-    <div className="container portfolio-container">
-      {
-      cards.map(({
-        id, img, title, github, demo,
-      }) => (
-        <article className="portfolio-item" key={id}>
-          <div className="portfolio-img">
-            <img src={img} alt="port-img" />
-          </div>
-          <h3>{title}</h3>
-          <div className="portfolio-cta">
-            <a href={github} className="btn" target="_blank" rel="noreferrer">Code</a>
-            <a href={demo} className="btn btn-primary" target="_blank" rel="noreferrer">Live Demo</a>
-          </div>
-        </article>
-      ))
-      }
-    </div>
-  </section>
-);
+const Portfolio = () => {
+  useEffect(() => {
+    Aos.init({
+      offset: 400,
+      duration: 1000,
+    });
+  }, []);
+  return (
+    <section id="portfolio" data-aos="fade-left">
+      <h5>My Personal Repos</h5>
+      <h2>Portfolio</h2>
+      <div className="container portfolio-container">
+        {
+        cards.map(({
+          id, img, title, github, demo,
+        }) => (
+          <article className="portfolio-item" key={id}>
+            <div className="portfolio-img">
+              <img src={img} alt="port-img" />
+            </div>
+            <h3>{title}</h3>
+            <div className="portfolio-cta">
+              <a href={github} className="btn" target="_blank" rel="noreferrer">Code</a>
+              <a href={demo} className="btn btn-primary" target="_blank" rel="noreferrer">Live Demo</a>
+            </div>
+          </article>
+        ))
+        }
+      </div>
+    </section>
+  );
+};
 
 export default Portfolio;

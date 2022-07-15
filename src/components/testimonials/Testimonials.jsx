@@ -1,20 +1,23 @@
 /* eslint-disable react/jsx-boolean-value */
-import React from 'react';
+import React, { useEffect } from 'react';
+
+// import scroll animation
+import Aos from 'aos';
 
 // import Swiper core and required modules
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Modules
+// slide modules
 import { Autoplay, Pagination, Navigation } from 'swiper';
 
-// Avatar photo
+// avatar photo
 import AVTR1 from '../../assets/avatar1.jpg';
 import AVTR2 from '../../assets/avatar2.jpg';
 
-// Main SASS styles
+// main SASS styles
 import './testimonials.scss';
 
-// Import Swiper styles
+// import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -65,38 +68,47 @@ const testimonials = [
     `,
   },
 ];
-const Testimonials = () => (
-  <section id="testimonials">
-    <h5>Review from colleagues</h5>
-    <h2>Testimonials</h2>
+const Testimonials = () => {
+  useEffect(() => {
+    Aos.init({
+      offset: 400,
+      duration: 1000,
+    });
+  }, []);
 
-    <Swiper
-      className="container testimonials-container"
-      // install Swiper modules
-      spaceBetween={40}
-      centeredSlides={true}
-      autoplay={{
-        delay: 8000,
-        disableOnInteraction: false,
-      }}
-      pagination={{ clickable: true }}
-      modules={[Autoplay, Pagination, Navigation]}
-    >
-      {
-        testimonials.map(({
-          id, avatar, name, review,
-        }) => (
-          <SwiperSlide className="testimonial" key={id}>
-            <div className="colleagues-avatar">
-              <img src={avatar} alt="avatar-img" />
-            </div>
-            <h5 className="colleague-name">{name}</h5>
-            <small className="colleague-review">{review}</small>
-          </SwiperSlide>
-        ))
-      }
-    </Swiper>
-  </section>
-);
+  return (
+    <section id="testimonials" data-aos="fade-right">
+      <h5>Review from colleagues</h5>
+      <h2>Testimonials</h2>
+
+      <Swiper
+        className="container testimonials-container"
+        // install Swiper modules
+        spaceBetween={40}
+        centeredSlides={true}
+        autoplay={{
+          delay: 8000,
+          disableOnInteraction: false,
+        }}
+        pagination={{ clickable: true }}
+        modules={[Autoplay, Pagination, Navigation]}
+      >
+        {
+          testimonials.map(({
+            id, avatar, name, review,
+          }) => (
+            <SwiperSlide className="testimonial" key={id}>
+              <div className="colleagues-avatar">
+                <img src={avatar} alt="avatar-img" />
+              </div>
+              <h5 className="colleague-name">{name}</h5>
+              <small className="colleague-review">{review}</small>
+            </SwiperSlide>
+          ))
+        }
+      </Swiper>
+    </section>
+  );
+};
 
 export default Testimonials;
