@@ -11,8 +11,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper';
 
 // avatar photo
-import AVTR1 from '../../assets/avatar1.jpg';
-import AVTR2 from '../../assets/avatar2.jpg';
+import avatar1 from '../../assets/partner1.jpg';
+import avatar2 from '../../assets/partner2.jpg';
 
 // main SASS styles
 import './testimonials.scss';
@@ -25,7 +25,7 @@ import 'swiper/css/pagination';
 const testimonials = [
   {
     id: 1,
-    avatar: AVTR1,
+    avatar: avatar1,
     name: 'Ibrohim Rasulov',
     review:
     `
@@ -36,7 +36,7 @@ const testimonials = [
   },
   {
     id: 2,
-    avatar: AVTR2,
+    avatar: avatar2,
     name: 'Reem Janina',
     review:
     `
@@ -47,7 +47,7 @@ const testimonials = [
   },
   {
     id: 3,
-    avatar: AVTR1,
+    avatar: avatar1,
     name: 'Ibrohim Rasulov',
     review:
     `
@@ -58,7 +58,7 @@ const testimonials = [
   },
   {
     id: 4,
-    avatar: AVTR2,
+    avatar: avatar2,
     name: 'Reem Janina',
     review:
     `
