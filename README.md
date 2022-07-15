@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### READ THIS FIRST
+
+> This project is still in development mode. You can check out the live page [here](https://just404-portfolio.netlify.app), but there are changes that need to be implemented.
+
 ## Available Scripts
 
 In the project directory, you can run:
