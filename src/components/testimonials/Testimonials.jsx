@@ -27,8 +27,7 @@ const testimonials = [
     id: 1,
     avatar: avatar1,
     name: 'Ibrohim Rasulov',
-    review:
-    `
+    review: `
       Nicolas is a brilliant software developer and one of the best coding partners I have ever met. He always surprised me with his willingness to help and great support.
       He is also a reliable and punctual person and a mentor who has taught me a lot when I am having blockers.
       I highly recommend my partner as a valuable asset to any organization.
@@ -38,8 +37,7 @@ const testimonials = [
     id: 2,
     avatar: avatar2,
     name: 'Reem Janina',
-    review:
-    `
+    review: `
       Nicolas as a software developer is amazing, helpful person and dedicated to his work. He work always at time, and lase he make amazing styles and final touches to the project.
       As well as he always supply me with updates on what he wanted to do and what he did.
       I really strongly recommend Nicolas to any job he makes his work in a very professional way
@@ -49,8 +47,7 @@ const testimonials = [
     id: 3,
     avatar: avatar1,
     name: 'Ibrohim Rasulov',
-    review:
-    `
+    review: `
     Nicolas is a brilliant software developer and one of the best coding partners I have ever met. He always surprised me with his willingness to help and great support.
     He is also a reliable and punctual person and a mentor who has taught me a lot when I am having blockers.
     I highly recommend my partner as a valuable asset to any organization.
@@ -60,8 +57,7 @@ const testimonials = [
     id: 4,
     avatar: avatar2,
     name: 'Reem Janina',
-    review:
-    `
+    review: `
       Nicolas as a software developer is amazing, helpful person and dedicated to his work. He work always at time, and lase he make amazing styles and final touches to the project.
       As well as he always supply me with updates on what he wanted to do and what he did.
       I really strongly recommend Nicolas to any job he makes his work in a very professional way
@@ -93,19 +89,17 @@ const Testimonials = () => {
         pagination={{ clickable: true }}
         modules={[Autoplay, Pagination, Navigation]}
       >
-        {
-          testimonials.map(({
-            id, avatar, name, review,
-          }) => (
-            <SwiperSlide className="testimonial" key={id}>
-              <div className="colleagues-avatar">
-                <img src={avatar} alt="avatar-img" />
-              </div>
-              <h5 className="colleague-name">{name}</h5>
-              <small className="colleague-review">{review}</small>
-            </SwiperSlide>
-          ))
-        }
+        {testimonials.map(({
+          id, avatar, name, review,
+        }) => (
+          <SwiperSlide className="testimonial" key={id}>
+            <div className="colleagues-avatar">
+              <img src={avatar} alt="avatar-img" />
+            </div>
+            <h5 className="colleague-name">{name}</h5>
+            <small className="colleague-review">{review}</small>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </section>
   );

@@ -37,16 +37,19 @@ header {
   }
 }
 
-.photo-header {
+.header-text-area {
   background: linear-gradient($color-primary, transparent);
-  width: 22rem;
-  height: 30rem;
-  left: calc(50% - 11rem);
-  margin-top: 4rem;
-  border-radius: 12rem 12rem 0 0;
-  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  margin-top: 9.5rem;
+  left: calc(50% - 14.5rem);
+  border-radius: 12rem;
   position: absolute;
   overflow: hidden;
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 0.5rem;
+  }
 }
 
 .scroll-down {

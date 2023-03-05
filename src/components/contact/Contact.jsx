@@ -17,12 +17,21 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_l7n9dy7', 'template_si53zjn', form.current, 'WKP49x0YLkHw8mjLj')
-      .then((result) => {
-        toastify(`Message status: ${result.text}`, 'success');
-      }, (error) => {
-        toastify(`Message status: ${error.text}`, 'error');
-      });
+    emailjs
+      .sendForm(
+        'service_l7n9dy7',
+        'template_si53zjn',
+        form.current,
+        'WKP49x0YLkHw8mjLj',
+      )
+      .then(
+        (result) => {
+          toastify(`Message status: ${result.text}`, 'success');
+        },
+        (error) => {
+          toastify(`Message status: ${error.text}`, 'error');
+        },
+      );
 
     e.target.reset();
   };
@@ -45,25 +54,55 @@ const Contact = () => {
             <MdOutlineEmail className="contact-icon" />
             <h4>Email</h4>
             <h5>nigonbol123@gmail.com</h5>
-            <a href="mailto:nigonbol123@gmail.com" target="_blank" rel="noreferrer">Send a message</a>
+            <a
+              href="mailto:nigonbol123@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Send a message
+            </a>
           </article>
           <article className="contact-option">
             <FiTwitter className="contact-icon" />
             <h4>Twitter</h4>
             <h5>@Nicolas54146830</h5>
-            <a href="https://twitter.com/messages/compose?recipient_id=@Nicolas54146830" target="_blank" rel="noreferrer">Send a message</a>
+            <a
+              href="https://twitter.com/messages/compose?recipient_id=@Nicolas54146830"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Send a message
+            </a>
           </article>
           <article className="contact-option">
             <BsWhatsapp className="contact-icon" />
             <h4>WhatsApp</h4>
-            <a href="https://wa.me/584140329952" target="_blank" rel="noreferrer">Send a message</a>
+            <a
+              href="https://wa.me/584140329952"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Send a message
+            </a>
           </article>
         </div>
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="name" placeholder="Your Full Name" required />
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Full Name"
+            required
+          />
           <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message" rows="7" placeholder="Your Message" required />
-          <button type="submit" className="btn btn-primary">Send Message</button>
+          <textarea
+            name="message"
+            rows="7"
+            placeholder="Your Message"
+            required
+          />
+          <button type="submit" className="btn btn-primary">
+            Send Message
+          </button>
         </form>
       </div>
     </section>

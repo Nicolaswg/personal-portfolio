@@ -65,8 +65,7 @@ const Portfolio = () => {
       <h5>My Personal Repos</h5>
       <h2>Portfolio</h2>
       <div className="container portfolio-container">
-        {
-        cards.map(({
+        {cards.map(({
           id, img, title, github, demo,
         }) => (
           <article className="portfolio-item" key={id}>
@@ -75,12 +74,20 @@ const Portfolio = () => {
             </div>
             <h3>{title}</h3>
             <div className="portfolio-cta">
-              <a href={github} className="btn" target="_blank" rel="noreferrer">Code</a>
-              <a href={demo} className="btn btn-primary" target="_blank" rel="noreferrer">Live Demo</a>
+              <a href={github} className="btn" target="_blank" rel="noreferrer">
+                Code
+              </a>
+              <a
+                href={demo}
+                className="btn btn-primary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live Demo
+              </a>
             </div>
           </article>
-        ))
-        }
+        ))}
       </div>
     </section>
   );
