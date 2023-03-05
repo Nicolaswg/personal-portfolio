@@ -13,6 +13,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper';
 // avatar photo
 import avatar1 from '../../assets/partner1.jpg';
 import avatar2 from '../../assets/partner2.jpg';
+import avatar3 from '../../assets/partner3.jpg';
 
 // main SASS styles
 import './testimonials.scss';
@@ -45,22 +46,11 @@ const testimonials = [
   },
   {
     id: 3,
-    avatar: avatar1,
-    name: 'Ibrohim Rasulov',
+    avatar: avatar3,
+    name: 'Hamza Halilovic',
     review: `
-    Nicolas is a brilliant software developer and one of the best coding partners I have ever met. He always surprised me with his willingness to help and great support.
-    He is also a reliable and punctual person and a mentor who has taught me a lot when I am having blockers.
-    I highly recommend my partner as a valuable asset to any organization.
-    `,
-  },
-  {
-    id: 4,
-    avatar: avatar2,
-    name: 'Reem Janina',
-    review: `
-      Nicolas as a software developer is amazing, helpful person and dedicated to his work. He work always at time, and lase he make amazing styles and final touches to the project.
-      As well as he always supply me with updates on what he wanted to do and what he did.
-      I really strongly recommend Nicolas to any job he makes his work in a very professional way
+    I highly recommend Nicolas Gonzalez as a candidate for your Junior Software Development position. I have worked with Nicolas as Head of Product at Prifina. 
+    While he was working at Prifina, Nicolas has proven to be a very fast learner. He was able to assimilate a complex developing environment in a short amount of time.Additionally, he was able to help others in understanding the hard concepts that our new developers are faced with.
     `,
   },
 ];
