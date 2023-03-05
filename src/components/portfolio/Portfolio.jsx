@@ -35,7 +35,7 @@ const cards = [
     img: IMG4,
     title: 'Pokemon List',
     github: 'https://github.com/Nicolaswg/Capstone_Pokemon_Api',
-    demo: 'https://nicolaswg.github.io/Capstone_Pokemon_Api/',
+    demo: 'https://capstone-pokemon.netlify.app',
   },
   {
     id: 5,
