@@ -68,15 +68,15 @@ const Experience = () => {
             <article className="experience-details">
               <BsPatchCheckFill className="experience-icon" />
               <div>
-                <h4>Ruby</h4>
+                <h4>Node.js</h4>
                 <small className="text-light">1+ Years</small>
               </div>
             </article>
             <article className="experience-details">
               <BsPatchCheckFill className="experience-icon" />
               <div>
-                <h4>Ruby on Rails</h4>
-                <small className="text-light">1+ Years</small>
+                <h4>Express.js</h4>
+                <small className="text-light">6+ months</small>
               </div>
             </article>
             <article className="experience-details">
@@ -88,8 +88,10 @@ const Experience = () => {
             </article>
             <article className="experience-details">
               <BsPatchCheckFill className="experience-icon" />
-              <h4>Rspec</h4>
-              <small className="text-light">1+ Years</small>
+              <div>
+                <h4>MongoDb</h4>
+                <small className="text-light">6+ months</small>
+              </div>
             </article>
           </div>
         </div>
