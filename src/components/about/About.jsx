@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { FaAward, FaUserFriends, FaProjectDiagram } from 'react-icons/fa';
 import Aos from 'aos';
-import PHOTO from '../../assets/me-about.jpg';
+import PHOTO from '../../assets/code-about.jpg';
 import './about.scss';
 import 'aos/dist/aos.css';
 
@@ -42,10 +42,10 @@ const About = () => {
             </article>
           </div>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ad
-            provident libero nesciunt mollitia qui. Delectus quibusdam nisi rem
-            tenetur possimus, officia dolor, accusantium doloremque molestiae,
-            nihil aliquam autem expedita?
+            Passionate about devising, developing,
+            and producing products focused on customer demands.
+            Open to exploring exciting full-stack development opportunities in startups,
+            and generating input on business scalability.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let&apos;s talk

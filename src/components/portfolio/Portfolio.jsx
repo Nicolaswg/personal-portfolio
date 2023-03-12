@@ -27,8 +27,8 @@ const cards = [
     id: 3,
     img: IMG3,
     title: 'Budget App',
-    github: 'https://github.com/Nicolaswg/budget-app',
-    demo: 'https://budget-capstone-1.herokuapp.com',
+    github: 'https://github.com/Nicolaswg/myBudget-App',
+    demo: 'https://budgetty-me.netlify.app/',
   },
   {
     id: 4,
